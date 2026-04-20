@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Field Reply Assistant</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="brand-banner panel">
+        <div class="brand-mark">
+          <img
+            src="https://le-cdn.hibuwebsites.com/a332b57b19c040db943febd9ddbcdd7b/dms3rep/multi/opt/southern-family-home-builders-logo-1920w.png"
+            alt="Southern Family Home Builders"
+          />
+        </div>
+        <div class="brand-copy">
+          <p class="eyebrow">Southern Family Home Builders</p>
+          <h1>Field replies built around the way SFHB actually works.</h1>
+          <p class="lede">
+            Keep client communication clear, personal, and moving while you're on-site, in inspections, and away from the desk.
+          </p>
+          <div class="brand-meta">
+            <span>Athens, AL</span>
+            <span>Huntsville, AL</span>
+            <span>(256) 397-3204</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero">
+        <div class="hero-chip-row">
+          <span class="hero-chip">Draft-first</span>
+          <span class="hero-chip">Phone-ready</span>
+          <span class="hero-chip">SFHB voice</span>
+        </div>
+      </section>
+
+      <section class="visual-strip" aria-hidden="true">
+        <article class="visual-card visual-card-wide">
+          <img
+            src="https://le-cdn.hibuwebsites.com/2a97a0dae4a34f99bf3939fcdd9f00c2/dms3rep/multi/opt/southern%2Bfamily%2Bhome%2Bbuilders%2Bgallery%2B%288%29-1920w.png"
+            alt=""
+          />
+          <div class="visual-overlay">
+            <p>Custom homes</p>
+            <strong>Builder-grade communication without sounding canned</strong>
+          </div>
+        </article>
+        <article class="visual-card">
+          <img
+            src="https://le-cdn.hibuwebsites.com/2a97a0dae4a34f99bf3939fcdd9f00c2/dms3rep/multi/opt/southern%2Bfamily%2Bhome%2Bbuilders%2Bgallery%2B%287%29-1920w.png"
+            alt=""
+          />
+        </article>
+      </section>
+
+      <section class="panel status-panel">
+        <div class="status-copy">
+          <h2>System Status</h2>
+          <p id="status-summary">Loading configuration...</p>
+          <p id="phone-url" class="phone-url"></p>
+        </div>
+        <div class="status-actions">
+          <button id="refresh-button" class="button">Refresh Inbox</button>
+        </div>
+      </section>
+
+      <section class="builder-notes">
+        <div class="builder-note panel">
+          <p class="label">Built For</p>
+          <strong>Site inspections, client follow-up, and in-field coordination</strong>
+        </div>
+        <div class="builder-note panel">
+          <p class="label">Brand Promise</p>
+          <strong>Warm, direct, professional, and never overpromised</strong>
+        </div>
+      </section>
+
+      <section class="mobile-tabs" aria-label="Sections">
+        <button id="tab-inbox" class="tab-button active" type="button">Inbox</button>
+        <button id="tab-draft" class="tab-button" type="button">Draft</button>
+      </section>
+
+      <section class="workspace">
+        <aside id="inbox-panel" class="panel inbox-panel">
+          <div class="panel-heading">
+            <h2>Inbox Queue</h2>
+            <p class="panel-note">Newest unread emails first</p>
+          </div>
+          <div id="message-list" class="message-list"></div>
+        </aside>
+
+        <section id="detail-panel" class="panel detail-panel">
+          <div id="message-detail" class="empty-state">
+            Select a message to review and draft a reply.
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+  </html>
