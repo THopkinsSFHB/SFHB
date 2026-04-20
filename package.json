@@ -1,0 +1,11 @@
+{
+  "name": "field-reply-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Google Workspace out-of-office drafting assistant for client email replies.",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "google-auth": "node scripts/google-auth-helper.js"
+  }
+}

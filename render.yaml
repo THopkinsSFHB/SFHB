@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: sfhb-field-reply-assistant
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: OPENAI_MODEL
+        value: gpt-5-mini
+      - key: OPENAI_MODE
+        value: live
+      - key: AUTO_SEND_ENABLED
+        value: false
+      - key: OOO_MODE_ENABLED
+        value: true
+      - key: COMPANY_NAME
+        value: Southern Family Home Builders
+      - key: SENDER_NAME
+        value: Taylor Hopkins
+      - key: FIELD_STATUS_MESSAGE
+        value: I am currently in the field on site inspections and hands-on project work, so my response times are limited.
+      - key: VOICE_STYLE_NOTES
+        value: Warm, direct, professional, grounded, and reassuring. Avoid overpromising. Keep replies specific to the client and project.
